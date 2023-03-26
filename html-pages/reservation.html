@@ -28,30 +28,30 @@
         <main class="main">
             <section class="reservation">
                 <h2 class="reservation__title">Book Your Event</h2>
-                <form class="reservation form">
+                <form class="reservation form" id="form">
                     <fieldset class="form__fieldset">
                         <label class="form__label" for="full-name">Full Name</label>
                         <input class="form__input" type="text" id="full-name" placeholder="Enter your full name">
                         <label class="form__label" for="date">Date</label>
                         <input class="form__input" type="date" id="date">
                         <label class="form__label" for="guest-number">Number of Guests</label>
-                        <input class="form__input" type="number" min="30" placeholder="How many guests?">
+                        <input class="form__input" type="number" min="30" placeholder="How many guests?"
+                            id="guest-number">
                         <label class="form__label" for="meats">Meat Options</label>
-                        <select class="form__select" name="meat" id="meat">
-                            <option value="">Choose your meats</option>
+                        <select class="form__select" name="meat" id="meats">
+                            <option value="" disabled selected>Choose your meats</option>
                             <option value="chicken">Chicken</option>
                             <option value="steak">Steak</option>
                             <option value="pastor">Pastor</option>
                             <option value="carnitas">Carnitas</option>
                         </select>
-                        <label class="form__label" for="tortillas">Tortillas:</label>
-                        <input class="form__input" type="checkbox" id="corn" name="tortillas" value="corn">
-                        <label type="form__label" for="corn">Corn</label>
-                        <input class="form__input" type="checkbox" id="flower" name="tortillas" value="flower">
-                        <label type="form__label" for="flower">Flower</label>
-                        <input class="form__input" type="checkbox" id="both" name="tortillas" value="both">
-                        <label type="form__label" for="corn">Corn</label>
-
+                        <label class="form__label" for="tortillas">Tortilla Options</label>
+                        <select class="form__select" name="tortillas" id="tortillas">
+                            <option value="" disabled selected>Choose your Tortillas</option>
+                            <option value="corn">Corn</option>
+                            <option value="flour">Flour</option>
+                            <option value="both">Both</option>
+                        </select>
                     </fieldset>
                     <fieldset class="form__fieldset">
                         <button class="button" type="submit">Submit</button>
@@ -73,7 +73,7 @@
             <p class="copyright">&copy; ¡Viva Tacos! Catering. All rights reserved</p>
         </footer>
     </div>
-    <script src="../js/app.js"></script>
+    <script src="../js/form-app.js"></script>
 </body>
 
 </html>
