@@ -1,9 +1,16 @@
+.nav {
+    background-color: #156964;
+    height: 100px;
+}
+
 .nav__links {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    align-items: center;
     gap: 30px;
-    margin-right: 30px;
-    padding-top: 10px;
+    list-style-type: none;
+    margin: 0;
+    height: 100px;
 }
 
 .nav__link {
@@ -15,5 +22,5 @@
 }
 
 .nav__link:hover {
-    color: #156964;
+    color: #57d1a8;
 }
