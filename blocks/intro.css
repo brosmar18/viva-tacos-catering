@@ -1,3 +1,42 @@
+.intro {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin-top: 30px;
+    width: 1200px;
+    height: 550px;
+    margin: 40px auto;
+}
+
+.intro__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    height: 300px;
+}
+
 .intro__title {
-    font-family: 'Chicle', cursive;
+    margin: 0;
+}
+
+.intro__subtitle {
+    margin: 0;
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.intro__description {
+    margin: 0;
+    text-indent: 30px;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+
+.intro__image {
+    height: auto;
 }
