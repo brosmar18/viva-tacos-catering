@@ -1,3 +1,42 @@
 .main {
     margin: 50px;
 }
+
+.samples__text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    width: 500px;
+    margin: 0 auto 40px;
+}
+
+.samples__title {
+    margin: 0;
+    font-size: 30px;
+    line-height: 35px;
+}
+
+.samples__description {
+    margin: 0;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.samples__images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.samples__image-01 {
+    grid-row: 1/2;
+}
+
+.samples__image {
+    width: 100%;
+    height: auto;
+}

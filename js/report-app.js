@@ -90,7 +90,6 @@ function displayReservations() {
     let reservations = JSON.parse(localStorage.getItem('reservations')) || [];
 
     if (reservations.length === 0) {
-        noDataMessage.style.display = 'block';
         thead.style.display = 'none';
     } else {
         noDataMessage.style.display = 'none';
