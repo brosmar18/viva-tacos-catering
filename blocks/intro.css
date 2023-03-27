@@ -17,7 +17,8 @@
     gap: 20px;
     align-items: center;
     height: 300px;
-    width: 700px;
+    width: 400px;
+    text-align: center;
 }
 
 .intro__title {
@@ -30,12 +31,12 @@
     line-height: 40px;
 }
 
-.intro__description {
+/* .intro__description {
     margin: 0;
     text-indent: 30px;
     font-size: 20px;
     line-height: 25px;
-}
+} */
 
 
 .intro__image {
