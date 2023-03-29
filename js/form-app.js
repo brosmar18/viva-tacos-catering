@@ -33,10 +33,17 @@ function handleFormSubmit(event) {
 
     const newReservation = new Reservation(reserveName, reserveDate, reserveGuests, reserveMeats, reserveTortillas);
 
+
+    // Retrieve the current list of reservations from localStorage, or set it to an empty array if it does not exist.
     let reservations = JSON.parse(localStorage.getItem('reservations')) || [];
+
+    // Add the new reservation object to the list of reservations.
     reservations.push(newReservation);
 
+    // Convert the list of reservations to a JSON string and store it in the browser's localStorage.
     localStorage.setItem('reservations', JSON.stringify(reservations));
 
+    // Reset the form inputs after the submission has been processed.
     event.target.reset();
+
 }
